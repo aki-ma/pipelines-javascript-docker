@@ -5,14 +5,14 @@
 trigger:
 - main
 
-resources:
-- repo: self
+# resources:
+# - repo: self
 
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '8be3bf39-c8da-4cf3-a9fd-b5ac699cc166'
   imageRepository: 'akimapipelinesjavascriptdocker'
-  containerRegistry: '20230222.azurecr.io'
+  # containerRegistry: '20230222.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
 
